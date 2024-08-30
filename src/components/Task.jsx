@@ -1,7 +1,12 @@
-import toast from "react-hot-toast";
+// src/components/Task.jsx
 import { useDrag } from "react-dnd";
+import { useDispatch } from "react-redux";
+import { removeTask } from "../redux/taskSlice";
+import toast from "react-hot-toast";
 
-function Task({ task, tasks, setTasks }) {
+function Task({ task }) {
+  const dispatch = useDispatch();
+
   const [{ isDragging }, drag] = useDrag(() => ({
     type: "task",
     item: { id: task.id },
@@ -10,30 +15,23 @@ function Task({ task, tasks, setTasks }) {
     }),
   }));
 
-  function handleRemove(id) {
-    const filterTasks = tasks.filter((item) => item.id !== id);
-    localStorage.setItem("tasks", JSON.stringify(filterTasks));
-    setTasks(filterTasks);
-    toast("Task removed successfully",{
-        duration:1000,
-        icon : "💀",
-    });
-  }
-  // console.log(task)
+  const handleRemove = () => {
+    toast("Item Deleted",{
+      icon:"💀"
+    })
+    dispatch(removeTask(task.id));
+  };
 
   return (
-    <div
+     <div
       ref={drag}
-      className={`relative overflow-hidden p-4 mt-4 bg-white shadow-md rounded-md cursor-grab ${
-        isDragging ? "opacity-50" : "opacity-100"
-      }`}
+      className={`relative p-4 mb-4 bg-white rounded-md shadow-lg ${isDragging ? 'opacity-50' : 'opacity-100'} transition-opacity`}
     >
-      <p className="text-lg text-slate-700">{task.name}</p>
-      <p className="text-sm text-slate-400">{task.description}</p>
-
+      <p className="text-lg font-semibold text-gray-800">{task.name}</p>
+      <p className="text-sm text-gray-600">{task.description}</p>
       <button
-        className="absolute top-2 right-2 text-slate-400 hover:text-red-500"
-        onClick={() => handleRemove(task.id)}
+        onClick={handleRemove}
+        className="absolute top-2 right-2 text-red-500 hover:text-red-700 transition-colors"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +44,7 @@ function Task({ task, tasks, setTasks }) {
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
-            d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            d="M6 18L18 6M6 6l12 12"
           />
         </svg>
       </button>

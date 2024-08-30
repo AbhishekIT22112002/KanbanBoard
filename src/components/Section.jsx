@@ -1,54 +1,45 @@
+// src/components/Section.jsx
 import Header from "./Header";
 import Task from "./Task";
 import { useDrop } from "react-dnd";
+import { useSelector, useDispatch } from "react-redux";
+import { updateTaskStatus } from "../redux/taskSlice";
 import toast from "react-hot-toast";
 
-function Section({ status, tasks, setTasks, ToDo, Inprogress, PeerReview, Done }) {
-  const [{ isOver }, drop] = useDrop(() => ({
+function Section({ status }) {
+  const dispatch = useDispatch();
+  const tasks = useSelector(state => state.tasks.filteredTasks);
+
+  const [{ isOver }, drop] = useDrop({
     accept: "task",
-    drop: (item) => addItemToSection(item.id),
+    drop: (item) => handleDrop(item.id),
     collect: (monitor) => ({
       isOver: !!monitor.isOver(),
     }),
-  }));
+  });
+
+  const tasksToMap = tasks.filter(task => task.status === status);
+
+  function handleDrop(id) {
+    dispatch(updateTaskStatus({ id, status }));
+    toast.success('Task moved successfully', {
+      duration: 1000,
+      icon: '🛒',
+    });
+  }
 
   let text = "Todo";
   let bg = "bg-slate-500";
-  let tasksToMap = ToDo;
 
   if (status === "inprogress") {
     text = "In Progress";
     bg = "bg-sky-400";
-    tasksToMap = Inprogress;
-  }
-  if (status === "peerReview") {
+  } else if (status === "peerReview") {
     text = "Peer Review";
     bg = "bg-purple-500";
-    tasksToMap = PeerReview;
-  }
-  if (status === "done") {
+  } else if (status === "done") {
     text = "Closed";
     bg = "bg-green-500";
-    tasksToMap = Done;
-  }
-
-  console.log(tasksToMap)
-  function addItemToSection(id) {
-    setTasks((prev) => {
-      const modifyTasks = prev.map((item) => {
-        if (item.id === id) {
-          return { ...item, status: status };
-        }
-
-        return item;
-      });
-      toast(' Item Dropped', {
-        duration: 1000,
-        icon: '🛒',
-      });
-      localStorage.setItem("tasks", JSON.stringify(modifyTasks));
-      return modifyTasks;
-    });
   }
 
   return (
@@ -57,10 +48,9 @@ function Section({ status, tasks, setTasks, ToDo, Inprogress, PeerReview, Done }
       className={`w-64 rounded-md p-4 shadow-md ${isOver ? "bg-slate-200" : bg}`}
     >
       <Header text={text} bg={bg} count={tasksToMap.length} />
-      {tasksToMap.length > 0 &&
-        tasksToMap.map((task) => (
-          <Task key={task.id} task={task} tasks={tasks} setTasks={setTasks} />
-        ))}
+      {tasksToMap.map(task => (
+        <Task key={task.id} task={task} />
+      ))}
     </div>
   );
 }
