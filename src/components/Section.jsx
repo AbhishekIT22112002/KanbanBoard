@@ -1,4 +1,4 @@
-// src/components/Section.jsx
+
 import Header from "./Header";
 import Task from "./Task";
 import { useDrop } from "react-dnd";

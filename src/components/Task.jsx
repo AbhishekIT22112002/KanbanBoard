@@ -1,4 +1,4 @@
-// src/components/Task.jsx
+
 import { useDrag } from "react-dnd";
 import { useDispatch } from "react-redux";
 import { removeTask } from "../redux/taskSlice";

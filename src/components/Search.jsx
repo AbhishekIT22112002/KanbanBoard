@@ -1,4 +1,4 @@
-// src/components/Search.jsx
+
 import { useDispatch, useSelector } from "react-redux";
 import { setSearchQuery } from "../redux/taskSlice";
 

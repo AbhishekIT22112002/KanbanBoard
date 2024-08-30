@@ -1,4 +1,4 @@
-// src/components/Modal.jsx
+
 import CreateTask from './CreateTask';
 import './modal.css';
 
