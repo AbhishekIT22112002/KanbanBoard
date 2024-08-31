@@ -1,6 +1,9 @@
 # Task Management Application
 
-This is a task management application built using React, Redux, and Tailwind CSS. It supports task creation, deletion, updating task status, and filtering tasks based on a search query. The application also provides a drag-and-drop interface for managing tasks across different statuses like "To Do", "In Progress", "Peer Review", and "Closed".
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)]([https://yourapp.github.io/](https://fluffy-tanuki-c0bc5b.netlify.app/))
+
+## Deployment
+The web app is live and can be accessed [here]([https://yourapp.github.io/](https://fluffy-tanuki-c0bc5b.netlify.app/).
 
 ## Table of Contents
 
