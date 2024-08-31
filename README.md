@@ -151,9 +151,11 @@ Add screenshots of your application here to demonstrate its functionality.
 
     - *Mobile View*
         
-        ![alt text](src/assets/Mobile-View/Main-Screen1.jpg = 100x20)
-        ![alt text](src/assets/Mobile-View/Main-Screen2.jpg = 100x20)
-        ![alt text](src/assets/Mobile-View/Main-Screen3.jpg = 100x20)
+        [<img src="src/assets/Mobile-View/Main-Screen1.jpg" width="250"/>](src/assets/Mobile-View/Main-Screen1.jpg)
+
+        [<img src="src/assets/Mobile-View/Main-Screen2.jpg" width="250"/>](src/assets/Mobile-View/Main-Screen2.jpg)
+
+        [<img src="src/assets/Mobile-View/Main-Screen3.jpg" width="250"/>](src/assets/Mobile-View/Main-Screen3.jpg)
 
 
 - **Create Task Modal:**
@@ -164,7 +166,7 @@ Add screenshots of your application here to demonstrate its functionality.
 
     - *Mobile View*
 
-        ![alt text](src/assets/Mobile-View/Add-Task.jpg){ height=200px% }
+        [<img src="src/assets/Mobile-View/Add-Task.jpg" height="250"/>](src/assets/Mobile-View/Add-Task.jpg)
 
 
 - **Drag and Drop:**
@@ -186,13 +188,13 @@ Add screenshots of your application here to demonstrate its functionality.
 
         - *Tap on the which you want to drag*
 
-            ![alt text](src/assets/Mobile-View/Drag.jpg){ height=200px% }
+        [<img src="src/assets/Mobile-View/Drag.jpg" height="250"/>](src/assets/Mobile-View/Drag.jpg)
 
         **Drop**
 
         - *Then drag till the box where you want to drop that item*
 
-        ![alt text](src/assets/Mobile-View/Drop.jpg){ height=200px% }
+        [<img src="src/assets/Mobile-View/Drop.jpg" height="250"/>](src/assets/Mobile-View/Drop.jpg)
 
 
 - **Search Task**
@@ -203,9 +205,9 @@ Add screenshots of your application here to demonstrate its functionality.
 
     - *Mobile View*
 
-        ![alt text](src/assets/Mobile-View/Search-1.jpg){ height=200px}
+        [<img src="src/assets/Mobile-View/Search-1.jpg" height="250"/>](src/assets/Mobile-View/Search-1.jpg)
 
-        ![alt text](src/assets/Mobile-View/Search-2.jpg){ height=200px}
+        [<img src="isrc/assets/Mobile-View/Search-2.jpg" height="250"/>](src/assets/Mobile-View/Search-2.jpg)
 
 
 ## Contributing
