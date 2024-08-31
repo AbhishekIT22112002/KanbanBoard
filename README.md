@@ -4,7 +4,7 @@ This is a task management application built using React, Redux, and Tailwind CSS
 
 ## Table of Contents
 
-* [Installation](#Installation)
+* [Overview](#Overview)
 * [Installation](#Installation)
 * [Features](#Features)
 * [Technologies Used](#Technologies-Used)
@@ -44,20 +44,20 @@ Build for production:
 
 ## Features
 
-1. Add Task:
-- Click on the "Create Task" button to open a modal where you can enter the task name and description.
-- Click "Add Task" to save the task.
+1. **Add Task:**
+    - Click on the "Create Task" button to open a modal where you can enter the task name and description.
+    - Click "Add Task" to save the task.
 
-2. Managing Tasks:
-- Tasks can be dragged and dropped between different sections ("To Do", "In Progress", "Peer Review", and "Closed").
-- You can also delete tasks by clicking the delete icon.
+2. **Managing Tasks:**
+    - Tasks can be dragged and dropped between different sections ("To Do", "In Progress", "Peer Review", and "Closed").
+    - You can also delete tasks by clicking the delete icon.
 
-3. Searching Tasks:
-- Use the search input to filter tasks by their name.
-- The task list will update in real-time as you type.
+3. **Searching Tasks:**
+    - Use the search input to filter tasks by their name.
+    - The task list will update in real-time as you type.
 
-4. Responsive Design:
-- The application is responsive and works well on mobile devices.
+4. **Responsive Design:**
+    - The application is responsive and works well on mobile devices.
 
 ## Technologies Used
 
@@ -77,39 +77,39 @@ Build for production:
 
 1. **App.jsx**
 
-This is the root component that integrates all the main features of the application. It sets up the drag-and-drop context using ***DndProvider***, initializes the tasks from local storage, and manages the layout of the main components like ***Search***, ***CreateButton***, and ***ListTasks***.
+    This is the root component that integrates all the main features of the application. It sets up the drag-and-drop context using ***DndProvider***, initializes the tasks from local storage, and manages the layout of the main components like ***Search***, ***CreateButton***, and ***ListTasks***.
 
 2. **CreateButton.jsx**
 
-A button that opens a modal for creating a new task. It uses Tailwind CSS for styling and handles the opening and closing of the modal.
+    A button that opens a modal for creating a new task. It uses Tailwind CSS for styling and handles the opening and closing of the modal.
 
 3. **CreateTask.jsx**
 
-A form inside the modal where users can enter the task name and description. It dispatches the addTask action to save the new task.
+    A form inside the modal where users can enter the task name and description. It dispatches the addTask action to save the new task.
 
 4. **Header.jsx**
 
-Displays the section header, including the title and the count of tasks in that section.
+    Displays the section header, including the title and the count of tasks in that section.
 
 5. **ListTasks.jsx**
 
-Renders the sections of tasks categorized by their status ("To Do", "In Progress", "Peer Review", "Closed"). Each section displays tasks that can be dragged and dropped.
+    Renders the sections of tasks categorized by their status ("To Do", "In Progress", "Peer Review", "Closed"). Each section displays tasks that can be dragged and dropped.
 
 6. **Modal.jsx**
 
-A modal component that wraps the ***CreateTask*** form. It handles closing the modal and includes a close button.
+    A modal component that wraps the ***CreateTask*** form. It handles closing the modal and includes a close button.
 
 7. **Search.jsx**
 
-An input field that allows users to search tasks by name. It updates the ***searchQuery*** in the Redux store.
+    An input field that allows users to search tasks by name. It updates the ***searchQuery*** in the Redux store.
 
 8. **Section.jsx**
 
-Renders a specific task section based on status. It integrates the drag-and-drop functionality and displays tasks that belong to that section.
+    Renders a specific task section based on status. It integrates the drag-and-drop functionality and displays tasks that belong to that section.
 
 9. **Task.jsx**
 
-Represents an individual task in the list. It supports dragging to move the task between sections and includes a delete button to remove the task.
+    Represents an individual task in the list. It supports dragging to move the task between sections and includes a delete button to remove the task.
 
 ## State Management
 
@@ -117,17 +117,17 @@ The application uses Redux for state management, particularly the ***taskSlice**
 
 1. **taskSlice.js**
 
-- **State Structure:**
-    - ***tasks***: An array of task objects.
-    - ***filteredTasks***: An array of tasks filtered by the search query.
-    - ***searchQuery***: The current search query string.
+    - **State Structure:**
+        - ***tasks***: An array of task objects.
+        - ***filteredTasks***: An array of tasks filtered by the search query.
+        - ***searchQuery***: The current search query string.
 
-- **Reducers:**
-    - ***setTasks***: Sets the list of tasks.
-    - ***addTask***: Adds a new task to the list.
-    - ***removeTask***: Removes a task from the list.
-    - ***updateTaskStatus***: Updates the status of a task (e.g., from "To Do" to "In Progress").
-    - ***setSearchQuery***: Updates the search query for filtering tasks.
+    - **Reducers:**
+        - ***setTasks***: Sets the list of tasks.
+        - ***addTask***: Adds a new task to the list.
+        - ***removeTask***: Removes a task from the list.
+        - ***updateTaskStatus***: Updates the status of a task (e.g., from "To Do" to "In Progress").
+        - ***setSearchQuery***: Updates the search query for filtering tasks.
 
 2. **store.js**
 
