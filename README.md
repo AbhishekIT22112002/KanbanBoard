@@ -1,9 +1,9 @@
 # Task Management Application
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)]([https://yourapp.github.io/](https://fluffy-tanuki-c0bc5b.netlify.app/))
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)]([https://yourapp.github.io/](https://fluffy-tanuki-c0bc5b.netlify.app/])
 
 ## Deployment
-The web app is live and can be accessed [here]([https://yourapp.github.io/](https://fluffy-tanuki-c0bc5b.netlify.app/).
+The web app is live and can be accessed [here]([https://yourapp.github.io/](https://fluffy-tanuki-c0bc5b.netlify.app/]).
 
 ## Table of Contents
 
