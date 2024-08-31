@@ -143,24 +143,71 @@ The application uses Redux for state management, particularly the ***taskSlice**
 
 Add screenshots of your application here to demonstrate its functionality.
 
-- Main Screen:
+- **Main Screen:**
 
-    ![alt text](src/assets/Main-Screen.png)  
-    
+    - *Chrome View*
 
-- Create Task Modal:
+        ![alt text](src/assets/Main-Screen.png) 
 
-    ![alt text](src/assets/Create-Task.png)
+    - *Mobile View*
 
-- Drag and Drop:
+        ![alt text](src/assets/Mobile-View/Main-Screen1.jpg)
 
-    **Drag**
+        ![alt text](src/assets/Mobile-View/Main-Screen2.jpg)
 
-    ![alt text](src/assets/Drag.png)
+        ![alt text](src/assets/Mobile-View/Main-Screen3.jpg)
 
-    **Drop**
 
-    ![alt text](src/assets/Drop.png)
+- **Create Task Modal:**
+
+    - *Chrome View*
+
+        ![alt text](src/assets/Create-Task.png)
+
+    - *Mobile View*
+
+        ![alt text](src/assets/Mobile-View/Add-Task.jpg)
+
+
+- **Drag and Drop:**
+
+    - *Chrome View*
+
+        **Drag**
+
+        ![alt text](src/assets/ChromeView/Drag.png)
+
+        **Drop**
+
+        ![alt text](src/assets/ChromeView/Drop.png)
+
+
+    - *Mobile View*
+
+        **Drag**
+
+        - *Tap on the which you want to drag*
+
+            ![alt text](src/assets/Mobile-View/Drag.jpg)
+
+        **Drop**
+
+        - *Then drag till the box where you want to drop that item*
+
+        ![alt text](src/assets/Mobile-View/Drop.jpg)
+
+
+- **Search Task**
+
+    - *Chrome View*
+
+        ![alt text](src/assets/ChromeView/Search-Task.png)
+
+    - *Mobile View*
+
+        ![alt text](src/assets/Mobile-View/Search-1.jpg)
+
+        ![alt text](src/assets/Mobile-View/Search-2.jpg)
 
 
 ## Contributing
