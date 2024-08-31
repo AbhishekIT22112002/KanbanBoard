@@ -1,4 +1,4 @@
-
+// src/App.jsx
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setTasks, setSearchQuery } from './redux/taskSlice';
@@ -7,7 +7,10 @@ import Search from './components/Search';
 import CreateButton from './components/CreateButton';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
+import { TouchBackend } from 'react-dnd-touch-backend';
+import { isMobile } from 'react-device-detect';
 import { Toaster } from 'react-hot-toast';
+
 
 function App() {
   const dispatch = useDispatch();
@@ -20,9 +23,9 @@ function App() {
 
   return (
     <>
-      <DndProvider backend={HTML5Backend}>
+      <DndProvider backend={isMobile ? TouchBackend : HTML5Backend}>
         <Toaster />
-        <div className="flex items-center p-3 gap-16 pt-32">
+        <div className="flex flex-wrap justify-center p-3 gap-16 pt-24">
           <Search
             searchQuery={searchQuery}
             setSearchQuery={(query) => dispatch(setSearchQuery(query))}

@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import toast from "react-hot-toast";
@@ -37,27 +36,22 @@ function CreateTask({ closeModal }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex items-center mb-8">
+    <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4">
       <input
         type="text"
         name="heading"
         value={task.name}
-        onChange={(e) =>
-          setTask({ ...task, name: e.target.value })
-        }
-        className="border border-slate-300 bg-white rounded-md p-3 w-64 text-sm mr-4 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+        onChange={(e) => setTask({ ...task, name: e.target.value })}
+        className="border border-gray-300 bg-gray-50 rounded-md p-3 w-full text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
         placeholder="Enter task name..."
         autoComplete="off"
-        
       />
       <input
         type="text"
         name="description"
         value={task.description}
-        onChange={(e) =>
-          setTask({ ...task, description: e.target.value })
-        }
-        className="border border-slate-300 bg-white rounded-md p-3 w-64 text-sm mr-4 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+        onChange={(e) => setTask({ ...task, description: e.target.value })}
+        className="border border-gray-300 bg-gray-50 rounded-md p-3 w-full text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
         placeholder="Enter task details..."
         autoComplete="off"
         required
@@ -65,7 +59,7 @@ function CreateTask({ closeModal }) {
 
       <button
         type="submit"
-        className="bg-cyan-500 text-white rounded-md px-6 py-3 text-sm font-semibold hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+        className="bg-indigo-600 text-white rounded-md px-6 py-3 text-sm font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
       >
         Add Task
       </button>

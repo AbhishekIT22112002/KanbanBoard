@@ -1,22 +1,15 @@
-
 import Section from "./Section";
 import { useSelector } from "react-redux";
 
 function ListTasks() {
-  // const filteredTasks = useSelector(state => state.tasks.filteredTasks);
-  const tasks = useSelector(state => state.tasks.tasks);
+  const tasks = useSelector((state) => state.tasks.tasks);
 
   return (
-    <div className="flex flex-wrap items-center justify-center gap-8">
+    <div className="flex flex-col md:flex-row flex-wrap items-start justify-center gap-8 py-8 px-4">
       {["todo", "inprogress", "peerReview", "done"].map((status, index) => (
-        <Section
-          status={status}
-          tasks={tasks}
-          key={index}
-        />
+        <Section status={status} tasks={tasks} key={index} />
       ))}
     </div>
   );
 }
-
 export default ListTasks;

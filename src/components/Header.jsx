@@ -1,9 +1,8 @@
-function Header({text, bg, count}) {
+function Header({ text, bg, count }) {
   return (
-    <div className={`${bg} flex items-center h-12 pl-4 rounded-md uppercase text-sm text-white`}>
-      {text}
-      <div className="ml-2 bg-white w-5 h-5 text-black
-      rounded-full flex items-center justify-center">
+    <div className={`${bg} flex items-center justify-between h-12 pl-4 pr-4 rounded-md uppercase text-sm text-white shadow-md`}>
+      <span>{text}</span>
+      <div className="ml-2 bg-white w-6 h-6 text-gray-800 rounded-full flex items-center justify-center font-bold">
         {count}
       </div>
     </div>

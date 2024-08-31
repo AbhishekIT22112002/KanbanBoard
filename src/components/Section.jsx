@@ -1,4 +1,3 @@
-
 import Header from "./Header";
 import Task from "./Task";
 import { useDrop } from "react-dnd";
@@ -8,7 +7,7 @@ import toast from "react-hot-toast";
 
 function Section({ status }) {
   const dispatch = useDispatch();
-  const tasks = useSelector(state => state.tasks.filteredTasks);
+  const tasks = useSelector((state) => state.tasks.filteredTasks);
 
   const [{ isOver }, drop] = useDrop({
     accept: "task",
@@ -18,22 +17,22 @@ function Section({ status }) {
     }),
   });
 
-  const tasksToMap = tasks.filter(task => task.status === status);
+  const tasksToMap = tasks.filter((task) => task.status === status);
 
   function handleDrop(id) {
     dispatch(updateTaskStatus({ id, status }));
-    toast.success('Task moved successfully', {
+    toast.success("Task moved successfully", {
       duration: 1000,
-      icon: '🛒',
+      icon: "🛒",
     });
   }
 
   let text = "Todo";
-  let bg = "bg-slate-500";
+  let bg = "bg-gray-700";
 
   if (status === "inprogress") {
     text = "In Progress";
-    bg = "bg-sky-400";
+    bg = "bg-blue-500";
   } else if (status === "peerReview") {
     text = "Peer Review";
     bg = "bg-purple-500";
@@ -45,12 +44,14 @@ function Section({ status }) {
   return (
     <div
       ref={drop}
-      className={`w-64 rounded-md p-4 shadow-md ${isOver ? "bg-slate-200" : bg}`}
+      className={`w-full md:w-72 h-96 rounded-md p-4 shadow-lg overflow-hidden ${isOver ? "bg-gray-200" : "bg-white"} transition-all`}
     >
       <Header text={text} bg={bg} count={tasksToMap.length} />
-      {tasksToMap.map(task => (
-        <Task key={task.id} task={task} />
-      ))}
+      <div className="mt-4 space-y-4 overflow-y-auto h-72">
+        {tasksToMap.map((task) => (
+          <Task key={task.id} task={task} />
+        ))}
+      </div>
     </div>
   );
 }
