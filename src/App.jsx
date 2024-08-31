@@ -25,6 +25,7 @@ function App() {
     <>
       <DndProvider backend={isMobile ? TouchBackend : HTML5Backend}>
         <Toaster />
+        <p className='text-6xl text-center mt-7'>Kanban Board</p>
         <div className="flex flex-wrap justify-center p-3 gap-16 pt-24">
           <Search
             searchQuery={searchQuery}

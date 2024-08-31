@@ -26,16 +26,24 @@ Clone the repository:
     git clone https://github.com/AbhishekIT22112002/KanbanBoard.git
 ```
 
+To access directory:
+
+```bash
+    cd KanbanBoard
+```
+
 Install dependencies:
 
 ```bash
     npm install
 ```
+
 Start the development server:
 
 ```bash
     npm run dev
 ```
+
 Build for production:
 
 ```bash
