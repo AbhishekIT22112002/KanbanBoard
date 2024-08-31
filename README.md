@@ -166,7 +166,7 @@ Add screenshots of your application here to demonstrate its functionality.
 
     - *Mobile View*
 
-        [<img src="src/assets/Mobile-View/Add-Task.jpg" height="250"/>](src/assets/Mobile-View/Add-Task.jpg)
+        [<img src="src/assets/Mobile-View/Add-Task.jpg" width="250"/>](src/assets/Mobile-View/Add-Task.jpg)
 
 
 - **Drag and Drop:**
@@ -188,13 +188,13 @@ Add screenshots of your application here to demonstrate its functionality.
 
         - *Tap on the which you want to drag*
 
-        [<img src="src/assets/Mobile-View/Drag.jpg" height="250"/>](src/assets/Mobile-View/Drag.jpg)
+        [<img src="src/assets/Mobile-View/Drag.jpg" width="250"/>](src/assets/Mobile-View/Drag.jpg)
 
         **Drop**
 
         - *Then drag till the box where you want to drop that item*
 
-        [<img src="src/assets/Mobile-View/Drop.jpg" height="250"/>](src/assets/Mobile-View/Drop.jpg)
+        [<img src="src/assets/Mobile-View/Drop.jpg" width="250"/>](src/assets/Mobile-View/Drop.jpg)
 
 
 - **Search Task**
@@ -205,9 +205,11 @@ Add screenshots of your application here to demonstrate its functionality.
 
     - *Mobile View*
 
-        [<img src="src/assets/Mobile-View/Search-1.jpg" height="250"/>](src/assets/Mobile-View/Search-1.jpg)
+        - *Search the task you want to*
 
-        [<img src="isrc/assets/Mobile-View/Search-2.jpg" height="250"/>](src/assets/Mobile-View/Search-2.jpg)
+        [<img src="src/assets/Mobile-View/Search-1.jpg" width="250"/>](src/assets/Mobile-View/Search-1.jpg)
+
+        [<img src="src/assets/Mobile-View/Search-2.jpg" width="250"/>](src/assets/Mobile-View/Search-2.jpg)
 
 
 ## Contributing
