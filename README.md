@@ -150,12 +150,10 @@ Add screenshots of your application here to demonstrate its functionality.
         ![alt text](src/assets/ChromeView/Main-Screen.png) 
 
     - *Mobile View*
-
-        ![alt text](src/assets/Mobile-View/Main-Screen1.jpg){ height=200px% }
-
-        ![alt text](src/assets/Mobile-View/Main-Screen2.jpg){ height=200px% }
-
-        ![alt text](src/assets/Mobile-View/Main-Screen3.jpg){ height=200px% }
+        
+        ![alt text](src/assets/Mobile-View/Main-Screen1.jpg = 100x20)
+        ![alt text](src/assets/Mobile-View/Main-Screen2.jpg = 100x20)
+        ![alt text](src/assets/Mobile-View/Main-Screen3.jpg = 100x20)
 
 
 - **Create Task Modal:**
@@ -205,9 +203,9 @@ Add screenshots of your application here to demonstrate its functionality.
 
     - *Mobile View*
 
-        ![alt text](src/assets/Mobile-View/Search-1.jpg){ height=200px% }
+        ![alt text](src/assets/Mobile-View/Search-1.jpg){ height=200px}
 
-        ![alt text](src/assets/Mobile-View/Search-2.jpg){ height=200px% }
+        ![alt text](src/assets/Mobile-View/Search-2.jpg){ height=200px}
 
 
 ## Contributing
