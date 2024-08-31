@@ -131,7 +131,7 @@ The application uses Redux for state management, particularly the ***taskSlice**
 
 2. **store.js**
 
-Configures the Redux store and integrates the ***taskSlice*** reducer.
+    Configures the Redux store and integrates the ***taskSlice*** reducer.
 
 ## Styling
 
@@ -145,9 +145,23 @@ Add screenshots of your application here to demonstrate its functionality.
 
 - Main Screen:
 
+    ![alt text](src/assets/Main-Screen.png)  
+    
+
 - Create Task Modal:
 
+    ![alt text](src/assets/Create-Task.png)
+
 - Drag and Drop:
+
+    **Drag**
+
+    ![alt text](src/assets/Drag.png)
+
+    **Drop**
+
+    ![alt text](src/assets/Drop.png)
+
 
 ## Contributing
 
