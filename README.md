@@ -147,26 +147,26 @@ Add screenshots of your application here to demonstrate its functionality.
 
     - *Chrome View*
 
-        ![alt text](src/assets/Main-Screen.png) 
+        ![alt text](src/assets/ChromeView/Main-Screen.png) 
 
     - *Mobile View*
 
-        ![alt text](src/assets/Mobile-View/Main-Screen1.jpg)
+        ![alt text](src/assets/Mobile-View/Main-Screen1.jpg){ height=200px% }
 
-        ![alt text](src/assets/Mobile-View/Main-Screen2.jpg)
+        ![alt text](src/assets/Mobile-View/Main-Screen2.jpg){ height=200px% }
 
-        ![alt text](src/assets/Mobile-View/Main-Screen3.jpg)
+        ![alt text](src/assets/Mobile-View/Main-Screen3.jpg){ height=200px% }
 
 
 - **Create Task Modal:**
 
     - *Chrome View*
 
-        ![alt text](src/assets/Create-Task.png)
+        ![alt text](src/assets/ChromeView/Create-Task.png)
 
     - *Mobile View*
 
-        ![alt text](src/assets/Mobile-View/Add-Task.jpg)
+        ![alt text](src/assets/Mobile-View/Add-Task.jpg){ height=200px% }
 
 
 - **Drag and Drop:**
@@ -188,13 +188,13 @@ Add screenshots of your application here to demonstrate its functionality.
 
         - *Tap on the which you want to drag*
 
-            ![alt text](src/assets/Mobile-View/Drag.jpg)
+            ![alt text](src/assets/Mobile-View/Drag.jpg){ height=200px% }
 
         **Drop**
 
         - *Then drag till the box where you want to drop that item*
 
-        ![alt text](src/assets/Mobile-View/Drop.jpg)
+        ![alt text](src/assets/Mobile-View/Drop.jpg){ height=200px% }
 
 
 - **Search Task**
@@ -205,9 +205,9 @@ Add screenshots of your application here to demonstrate its functionality.
 
     - *Mobile View*
 
-        ![alt text](src/assets/Mobile-View/Search-1.jpg)
+        ![alt text](src/assets/Mobile-View/Search-1.jpg){ height=200px% }
 
-        ![alt text](src/assets/Mobile-View/Search-2.jpg)
+        ![alt text](src/assets/Mobile-View/Search-2.jpg){ height=200px% }
 
 
 ## Contributing
