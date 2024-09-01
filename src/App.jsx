@@ -16,6 +16,7 @@ function App() {
   const dispatch = useDispatch();
   const searchQuery = useSelector(state => state.tasks.searchQuery);
 
+
   useEffect(() => {
     const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
     dispatch(setTasks(savedTasks));

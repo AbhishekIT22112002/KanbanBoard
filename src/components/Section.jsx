@@ -9,6 +9,7 @@ function Section({ status }) {
   const dispatch = useDispatch();
   const tasks = useSelector((state) => state.tasks.filteredTasks);
 
+/* This code is using the `useDrop` hook from the `react-dnd` library in a React component. */
   const [{ isOver }, drop] = useDrop({
     accept: "task",
     drop: (item) => handleDrop(item.id),
@@ -19,6 +20,10 @@ function Section({ status }) {
 
   const tasksToMap = tasks.filter((task) => task.status === status);
 
+/**
+ * The handleDrop function updates the status of a task and displays a success message using a toast
+ * notification.
+ */
   function handleDrop(id) {
     dispatch(updateTaskStatus({ id, status }));
     toast.success("Task moved successfully", {

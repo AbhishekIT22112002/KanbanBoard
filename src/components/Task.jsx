@@ -6,6 +6,9 @@ import toast from "react-hot-toast";
 function Task({ task }) {
   const dispatch = useDispatch();
 
+ /* This code snippet is using the `useDrag` hook from the `react-dnd` library to enable drag-and-drop
+ functionality for the Task component. Here's a breakdown of what it's doing: */
+
   const [{ isDragging }, drag] = useDrag(() => ({
     type: "task",
     item: { id: task.id },

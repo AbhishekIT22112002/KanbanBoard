@@ -6,6 +6,9 @@ import { addTask } from "../redux/taskSlice";
 
 function CreateTask({ closeModal }) {
   const dispatch = useDispatch();
+ /* The `const [task, setTask] = useState({ id: "", name: "", description: "", status: "todo" });`
+  `CreateTask` component is using the `useState` hook from React to initialize a state
+ variable named `task` and a function to update that state named `setTask`. */
   const [task, setTask] = useState({
     id: "",
     name: "",
